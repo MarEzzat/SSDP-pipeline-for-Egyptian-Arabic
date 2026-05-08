@@ -571,5 +571,9 @@ This pipeline demonstrates:
 ## Last But Not Least
 
 **Mariam Ezzat**
-**Email**: [mariamezzat578@gmail.com]
-**GITHUB**: [github.com/MarEzzat]
+
+**Email**: mariamezzat578@gmail.com
+
+**GitHub**: [github.com/MarEzzat](https://github.com/MarEzzat)
+
+**Kaggle**: [kaggle.com/mariamezzathammam](https://kaggle.com/mariamezzathammam)
