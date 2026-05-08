@@ -1,0 +1,33 @@
+# Core TTS
+TTS==0.22.0
+torch>=2.0.0
+torchaudio
+
+# UI
+streamlit==1.28.0
+
+# Audio processing
+librosa==0.10.1
+soundfile==0.12.1
+
+# Dataset
+datasets==2.14.0
+
+# Utils
+pyyaml
+tqdm
+pandas
+
+# Numpy 
+numpy==1.22.0
+
+# pip install "numpy==1.22.4"
+# pip install "pyarrow==12.0.1"
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118
+# pip install TTS==0.22.0
+# pip install streamlit==1.28.0
+# pip install "librosa==0.10.1"
+# pip install soundfile==0.12.1
+# pip install "datasets==2.21.0"
+# pip install "transformers==4.33.0"
+# pip install pyyaml tqdm pandas

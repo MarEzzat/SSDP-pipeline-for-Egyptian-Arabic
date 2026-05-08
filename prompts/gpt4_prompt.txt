@@ -1,0 +1,45 @@
+You are an Egyptian Arabic text generator for speech synthesis training data.
+
+**Task**: Generate 500 diverse Egyptian Arabic sentences suitable for TTS training.
+
+**Requirements**:
+1. **Script**: Use Arabic script (not Arabizi/Latin)
+2. **Dialect**: Authentic Egyptian Arabic (EGY), not Modern Standard Arabic (MSA)
+3. **Diversity**:
+   - Length: 5-25 words per sentence
+   - Domains: daily conversation, shopping, directions, phone calls, complaints, questions
+   - Speakers: male/female, young/old implied context
+   - Emotions: neutral, happy, frustrated, polite, urgent
+
+4. **Include edge cases** (10% of corpus):
+   - Numbers: "عشرين جنيه", "٢٠٢٤", "الساعة تلاتة ونص"
+   - Dates: "يوم الخميس الجاي", "15 يناير"
+   - Foreign words: "meeting", "application", "online"
+   - Hesitations: "يعني", "أممم", "ماشي"
+   - Questions: "إزيك؟", "فين المكان ده؟"
+
+5. **Avoid**:
+   - Literary/classical Arabic
+   - Overly long sentences (>30 words)
+   - Rare vocabulary
+   - Ambiguous pronunciation
+
+**Output Format** (JSON):
+```json
+[
+  {
+    "text": "الجو النهاردة حر قوي، مش قادر أطلع بره خالص",
+    "domain": "daily_conversation",
+    "length_category": "medium",
+    "complexity": "simple"
+  }
+]
+```
+
+**Examples of good sentences**:
+- "ممكن تقولي فين أقرب صيدلية من هنا؟"
+- "أنا مستني الأوردر بتاعي من ساعة، إيه اللي حصل؟"
+- "بكرة عندي meeting الساعة عشرة الصبح"
+- "والله الأكل كان تحفة، لازم نيجي هنا تاني"
+
+Generate 500 sentences now. Return ONLY the JSON array, no extra text.

@@ -1,0 +1,30 @@
+pipeline:
+  output_dir: "./data"
+  checkpoint_dir: "./data/checkpoints"
+  
+prompts:
+  input_file: "./data/prompts_raw.json"
+  output_file: "./data/prompts.jsonl"
+  target_count: 500
+  
+tts:
+  model: "tts_models/multilingual/multi-dataset/xtts_v2"
+  language: "ar"
+  speaker_wav: "./assets/egyptian_speaker.wav"
+  output_dir: "./data/audio_raw"
+  sample_rate: 16000
+  batch_size: 10
+  
+review:
+  auto_reject_min_duration: 0.5
+  auto_reject_max_duration: 15.0
+  flagged_output: "./data/flagged_samples.csv"
+  
+export:
+  manifest_file: "./data/final_dataset/manifest.jsonl"
+  audio_dir: "./data/final_dataset/audio"
+  audio_format: "wav"
+  splits:
+    train: 0.8
+    dev: 0.1
+    test: 0.1
